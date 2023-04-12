@@ -1,3 +1,3 @@
 export const environment = {
-    api_url:"src/assets/data/fakedata.json"
+    api_url:"assets/data/fakedata.json"
 };

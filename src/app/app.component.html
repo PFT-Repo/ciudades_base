@@ -3,15 +3,17 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
       <h1  class="col">{{ciudad.name}}</h1>
       <h3  class="col">{{ciudad.country}}</h3>
-      <div class="col"  *ngFor="let images of ciudad.images">
-        <img  src="{{images.url}}" alt="" height="100" width="200">
+      <div class="col" *ngFor="let images of ciudad.images">
+        <img class="imgo"  src="{{images.url}}" alt="">
       </div>
     </div>
   </div>
 </ng-container>
 <ng-template #loader>
-  <button class="btn btn-info" type="button" disabled>
-    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-    Loading...
-  </button>
+  <div class="w-100 text-center mt-5">
+    <button class="btn btn-warning" type="button" disabled>
+      <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+      Loading...
+    </button>
+  </div>
 </ng-template>

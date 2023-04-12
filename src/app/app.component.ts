@@ -14,8 +14,6 @@ export class AppComponent {
     service.getData();
     setTimeout(() => {
       this.data = service.data;
-      console.log(this.data);
-      
     }, 1000);
   }
 }
